@@ -22,3 +22,6 @@ type gnss_socket, file_type;
 
 # i915 videostatus
 type sysfs_videostatus, fs_type, sysfs_type;
+
+#rootfs missing labels
+type log_file, file_type;
