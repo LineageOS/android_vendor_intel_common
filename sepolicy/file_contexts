@@ -72,5 +72,9 @@
 # i915 videostatus
 /sys/devices/pci0000:00/0000:00:02.0/drm/card0/power/i915_videostatus u:object_r:sysfs_videostatus:s0
 
+# ap[k]_logfs entry point script
+/system/bin/logcat_ep.sh        u:object_r:logsvc_exec:s0
+/system/bin/start_log_srv.sh    u:object_r:logsvc_exec:s0
+
 # Logs
 /data/logs(/.*)?                u:object_r:log_file:s0
