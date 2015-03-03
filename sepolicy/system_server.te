@@ -8,3 +8,6 @@ allow system_server surfaceflinger_tmpfs:file { read write };
 # enable Battery Saver
 allow system_server thermal_socket:sock_file write;
 allow system_server thermal:unix_dgram_socket sendto;
+
+# Property Service write
+allow system_server shell_prop:property_service set;
